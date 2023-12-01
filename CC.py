@@ -23,6 +23,6 @@ if __name__ == "__main__":
     
     api_url = 'http://10.0.61.32'
 
-    api_key = 'VUd4YWw1TGZBek51RElqM2tQMHM='
+    api_key = os.environ.get('API_KEY')
 
     get_credit_card_numbers(api_url, api_key)
